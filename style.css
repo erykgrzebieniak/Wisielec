@@ -1,0 +1,245 @@
+html
+{
+    background-color: rgb(105, 209, 105);
+}
+body
+{
+    height: 100vh;
+}
+#container_glowny
+{
+    background-color: lightgreen;
+    font-size: 24px;
+    color: #333;
+    font-family: 'Roboto Mono', monospace;
+    height: 100vh;
+}
+#tytul h1
+{
+    margin-top: 10px;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#zasady
+{
+    text-align: center;
+
+}
+
+#content
+{
+    text-align: center;
+    color: white;
+}
+#content h1
+{
+    color: #333;
+}
+h2
+{
+    margin-top: 10px;
+    font-size: 34px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+}
+.naglowek_sekcji
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.jakie_mamy_opszons
+{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    height: 140px;
+    background-color: #ffa600;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#footer
+{
+    font-size: medium;
+    text-align: center;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 0;
+}
+.lewa_czesc_w
+{
+    float: left;
+    width: 33%; 
+    height: 100%; 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: green;
+    z-index: 100;
+}
+.srodek
+{
+    float: left;
+    width: 34%; 
+    height: 100%; 
+    background-color: white; 
+    z-index: 100;
+}
+.prawa_czesc
+{
+    float: left;
+    width: 33%; 
+    height: 100%; 
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: red;
+    z-index: 100;
+}
+#japan
+{
+    position: relative;
+    top: 30px;
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    border-radius: 40px;
+}
+.lewa_czesc_f
+{
+    float: left;
+    width: 33%; 
+    height: 100%; 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: blue;
+}
+
+.flaga
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.flaga:hover
+{
+    opacity: 1;
+}
+.zagraj
+{
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    background-color: #00cc00;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    opacity: 1;
+}
+.zagraj:hover
+{
+    background-color: #00e600;
+}
+.jakie_mamy_opszons p
+{
+    color: white;
+    height: 40px;
+    z-index: 900;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.sporty
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.litera
+{
+    float: left;
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: white;
+    width: 60px;
+    height: 42px;
+    border-radius: 15px;
+    margin: 6px;
+    cursor: pointer;
+    text-align: center;
+}
+.litera:hover
+{
+    border: 3px solid white;
+    color: white;
+    background-color: #222;
+    border-radius: 15px;
+}
+#obrazek
+{
+    float: left;
+    width: 50%;
+}
+#klawiatura
+{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+#licznik
+{
+    clear: both;
+    text-align: center;
+    line-height: 300%;
+}
+.reset
+{
+    margin-top: 30px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border: 2px solid rgb(68, 62, 62);
+    border-radius: 8px;
+    background-color: #ff8c1a;
+    cursor: pointer;
+}
+.reset:hover
+{
+    border: 2px solid black;
+    background-color: #e6b800;
+    -webkit-box-shadow: 10px 5px 15px 0px rgba(46, 46, 57, 1);
+    -moz-box-shadow: 10px 5px 15px 0px rgba(46, 46, 57, 1);
+    box-shadow: 10px 5px 15px 0px rgba(46, 46, 57, 1);
+}
+#pojemnik_na_reklame
+{
+    position: sticky;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.3);  
+    min-width: 100%;
+    height: 100px;
+    z-index: 999;
+}
+#ad
+{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    text-align: center;
+    padding-top: 14px;
+    font-size: 40px;
+    width: 900px;
+    height: 100px;
+}

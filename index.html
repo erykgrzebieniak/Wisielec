@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Hangman"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="keywords" content="gra,game,wisielec,hangman,bootstrap,jquery,xml"/>
+    <title>Hang man</title>
+    <link rel="stylesheet" href="styl.css" type="text/css"/>
+    <link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js_1.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="logo_bez.png">
+</head>
+<body>
+    <div class="container-fluid" id="container_glowny">
+        <!-- tytuł strony -->
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8" id="tytul"><h1>Gra w "wisielca" wersja family friendly</h1></div>
+            <div class="col-2"></div>
+        </div>
+        <!-- zasady -->
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10" id="zasady">
+                <p style="font-size: 15px;">
+                Komputer losuje słowo z wybranej kategorii, ujawniając na za pomocą poziomych kresek liczbę tworzących je liter.
+                Gracz stara się odgadnąć litery słowa. <br> Za każdym razem, gdy mu się to uda, komputer wstawia literę w odpowiednie miejsce;
+                w przeciwnym wypadku rysuje element symbolicznego kwiatka i lecącej do niego pszczółki.<br>
+                Jeżeli pszczółka odleci zanim grcz odgadnie słowo, wówczas komputer wygrywa.
+                </p>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <!-- główny kontent -->
+        <div class="container" id="all">
+        <div class="container" id="content">
+            <!--kategorie-->
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6" id="kat"><h2>Kategorie haseł do wyboru:</h2></div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6" class="naglowek_sekcji">Jedzenie</div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row">
+                <!--poszczególne opcje-->
+                <div class="col-4">
+                    <div class="jakie_mamy_opszons">
+                        <div class="lewa_czesc_w"></div>
+                        <div class="srodek"></div>
+                        <div class="prawa_czesc"></div>
+                        <div class="flaga"><p>Kuchnia włoska</p><button class="zagraj" onclick="opszons(0)">Zagraj</button></div>
+                    </div>
+                </div>
+                <!--poszczególne opcje-->
+                <div class="col-4">
+                    <div class="jakie_mamy_opszons" style="background-color: white;">
+                        <div id="japan"></div>
+                        <div class="flaga"><p>Kuchnia japońska</p><button class="zagraj" onclick="opszons(1)">Zagraj</button></div>
+                    </div>
+                </div>
+                <!--poszczególne opcje-->
+                <div class="col-4">
+                    <div class="jakie_mamy_opszons">
+                        <div class="lewa_czesc_f"></div>
+                        <div class="srodek"></div>
+                        <div class="prawa_czesc"></div>
+                        <div class="flaga"><p>Kuchnia Francuska</p><button class="zagraj" onclick="opszons(2)">Zagraj</button></div>
+                    </div>
+                </div>
+            </div>
+            <!--kategorie-->
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6" class="naglowek_sekcji">Marki pojazdów</div>
+                <div class="col-3"></div>
+                </div>
+            <div class="row">
+                <!--poszczególne opcje-->
+                <div class="col-4">
+                    <div class="jakie_mamy_opszons">
+                        <p>Samochody Osobowe</p><i class="icon-cab"></i>
+                        <div class="flaga"><p>Samochody Osobowe</p><button class="zagraj" onclick="opszons(3)">Zagraj</button></div>
+                    </div>
+                </div>
+                <!--poszczególne opcje-->
+                <div class="col-4">
+                    <div class="jakie_mamy_opszons">
+                        <p>Motocykle</p><i class="icon-motorcycle"></i>
+                        <div class="flaga"><p>Motocykle</p><button class="zagraj" onclick="opszons(4)">Zagraj</button></div>
+                    </div>
+                </div>
+                <!--poszczególne opcje-->
+                <div class="col-4">
+                    <div class="jakie_mamy_opszons">
+                        <p>Samochody Ciężarowe</p><i class="icon-truck"></i>
+                        <div class="flaga"><p>Samochody Ciężarowe</p><button class="zagraj" onclick="opszons(5)">Zagraj</button></div>
+                    </div>
+                </div>
+            </div>
+            <!--kategorie-->
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6" class="naglowek_sekcji">Sport</div>
+                <div class="col-3"></div>
+                </div>
+            <div class="row">
+                <!--poszczególne opcje-->
+                <div class="col-4">
+                    <div class="jakie_mamy_opszons">
+                        <img src="zima.jpg" class="sporty" alt="sporty zimowe"> <!--źródło obrazu https://kioskpolis.pl/sporty-zimowe-czyli-aktywny-sposob-na-spedzenie-czasu-zima/-->
+                        <div class="flaga"><p>Sporty zimowe</p><button class="zagraj" onclick="opszons(6)">Zagraj</button></div>
+                    </div>
+                </div>
+                <!--poszczególne opcje-->
+                <div class="col-4">
+                    <div class="jakie_mamy_opszons">
+                        <img src="woda.jpg" class="sporty" alt="sporty wodne"> <!--źródło obrazu https://systematyczny.pl/sporty-wodne-dla-odwaznych-teraz-w-chorwacji/-->
+                        <div class="flaga"><p>Sporty wodne</p><button class="zagraj" onclick="opszons(7)">Zagraj</button></div>
+                    </div>
+                </div>
+                <!--poszczególne opcje-->
+                <div class="col-4">
+                    <div class="jakie_mamy_opszons">
+                        <img src="ekstra.jpg" class="sporty" alt="sporty ekstremalne"> <!-- źródło obrazu https://tvn24.pl/tvnmeteo/najnowsze/dlaczego-niektorzy-uprawiaja-sporty-ekstremalne-4897581-->
+                        <div class="flaga"><p>Sporty ekstremalne</p><button class="zagraj" onclick="opszons(8)">Zagraj</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--divy do których kontent podstawia jquery-->
+        <div class="container" id="obrazek"></div>
+        <div class="container" id="klawiatura"></div>
+        <div class="container" id="licznik"></div>
+        </div>
+        <!--reklama-->
+        <div id="pojemnik_na_reklame">
+            <div class="col-12" id="ad">Miejsce na reklamę 900x100</div>
+        </div>
+        <!--stopka-->
+        <div class="col-12" id="footer">Wszystkie prawa zastrzeżone &copy; by Eryk Grzebieniak 21.37.2137r</div>
+        
+    </div>
+</body>
+</html>

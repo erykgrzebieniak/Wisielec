@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<hasla>
+<!--pierwszy rząd-jedzenie-->
+<!--pierwszy-->
+    <wlo>
+        <nazwa>pizza</nazwa>
+    </wlo>
+    <wlo>
+        <nazwa>spagetti</nazwa>    
+    </wlo>
+    <wlo>
+        <nazwa>tiramisu</nazwa>    
+    </wlo>
+    <wlo>
+        <nazwa>bruschetta</nazwa>    
+    </wlo>
+    <wlo>
+        <nazwa>fettuccine alla papalina</nazwa>    
+    </wlo>
+<!--drugi-->
+    <jap>
+        <nazwa>ramen</nazwa>
+    </jap>
+    <jap>
+        <nazwa>sushi</nazwa>    
+    </jap>
+    <jap>
+        <nazwa>omuraisu</nazwa>    
+    </jap>
+    <jap>
+        <nazwa>okonomiyaki</nazwa>    
+    </jap>
+    <jap>
+        <nazwa>pierożki gyoza</nazwa>    
+    </jap>
+<!--trzeci-->
+    <fra>
+        <nazwa>ratatouille</nazwa>
+    </fra>
+    <fra>
+        <nazwa>eklerki</nazwa>    
+    </fra>
+    <fra>
+        <nazwa>escargots</nazwa>    
+    </fra>
+    <fra>
+        <nazwa>mule</nazwa>    
+    </fra>
+    <fra>
+        <nazwa>quiche lorraine</nazwa>    
+    </fra>
+<!-- drugi rząd-transport-->
+<!--pierwszy-->
+    <sam>
+        <nazwa>ford</nazwa>
+    </sam>
+    <sam>
+        <nazwa>volkswagen</nazwa>    
+    </sam>
+    <sam>
+        <nazwa>toyota</nazwa>    
+    </sam>
+    <sam>
+        <nazwa>renault</nazwa>    
+    </sam>
+    <sam>
+        <nazwa>aston martin</nazwa>    
+    </sam>
+<!--drugi-->
+    <moto>
+        <nazwa>yamaha</nazwa>
+    </moto>
+    <moto>
+        <nazwa>kawasaki</nazwa>    
+    </moto>
+    <moto>
+        <nazwa>suzuki</nazwa>    
+    </moto>
+    <moto>
+        <nazwa>ktm</nazwa>    
+    </moto>
+    <moto>
+        <nazwa>harley davidson</nazwa>    
+    </moto>
+<!--trzeci-->
+    <truck>
+        <nazwa>man</nazwa>
+    </truck>
+    <truck>
+        <nazwa>scania</nazwa>    
+    </truck>
+    <truck>
+        <nazwa>volvo</nazwa>    
+    </truck>
+    <truck>
+        <nazwa>iveco</nazwa>    
+    </truck>
+    <truck>
+        <nazwa>daf</nazwa>    
+    </truck>
+<!--trzeci rząd-sport-->
+<!--pierwszy-->
+    <zima>
+        <nazwa>snowboarding</nazwa>
+    </zima>
+    <zima>
+        <nazwa>curling</nazwa>    
+    </zima>
+    <zima>
+        <nazwa>saneczkarstwo</nazwa>    
+    </zima>
+    <zima>
+        <nazwa>biathlon</nazwa>    
+    </zima>
+    <zima>
+        <nazwa>skoki narciarskie</nazwa>    
+    </zima>
+<!--drugi-->
+    <woda>
+        <nazwa>kajakarstwo</nazwa>
+    </woda>
+    <woda>
+        <nazwa>żeglarstwo</nazwa>    
+    </woda>
+    <woda>
+        <nazwa>surfing</nazwa>    
+    </woda>
+    <woda>
+        <nazwa>windsurfing</nazwa>    
+    </woda>
+    <woda>
+        <nazwa>skoki do wody</nazwa>    
+    </woda>
+<!--trzeci-->
+    <ekst>
+        <nazwa>parkour</nazwa>
+    </ekst>
+    <ekst>
+        <nazwa>myślistwo</nazwa>    
+    </ekst>
+    <ekst>
+        <nazwa>wspinaczka skałkowa i wysokogórska</nazwa>    
+    </ekst>
+    <ekst>
+        <nazwa>skoki bungee</nazwa>    
+    </ekst>
+    <ekst>
+        <nazwa>wspinaczka lodowa</nazwa>    
+    </ekst>
+</hasla>
